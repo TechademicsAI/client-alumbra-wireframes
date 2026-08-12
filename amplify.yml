@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    # No build step — this is a single self-contained static HTML file.
+    build:
+      commands: []
+  artifacts:
+    # Serve the repository root; index.html is the entry point.
+    baseDirectory: /
+    files:
+      - '**/*'
+  cache:
+    paths: []
